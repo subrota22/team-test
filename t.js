@@ -1,8 +1,12 @@
+
+function reverseString(string) {
 try {
-    
+string = string.split("").reverse().join("");
 } catch (error) {
-    console.log(error);
+   console.log(error.message); 
+}finally{
+console.log(string);
 }
-finally{
-    //ok
 }
+
+reverseString("friend is the best") ;
